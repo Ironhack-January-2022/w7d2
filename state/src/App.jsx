@@ -20,13 +20,16 @@ function App(props) {
     // increment count
     // counter = 1 -> we don't want to mutate state directly ❌
     // counter ++ -> this would also mutate the state ❌ -> it's really counter = counter + 1
+
+
+    // we pass the new value as a parameter to the setter
     setCounter(counter + 1)
 
     // if you use the current state to compute the new state then 
     // the setter should get a function as a parameter
     // setCounter((currentState, currentProps) => currentState + 1)
 
-    setCounter(counter => counter + 1)
+    // setCounter(counter => counter + 1)
   }
 
   const likeHandler = () => {
